@@ -13,8 +13,10 @@
 ## 1️⃣ 프로젝트 클론 & 의존성 설치
 
 ```bash
-git clone https://github.com/사용자/레포지토리.git
-cd 레포지토리
+git clone https://github.com/louis-cho/NextAuth.js-with-Credential
+cd NextAuth.js-with-Credential
+git checkout develop
+git pull origin develop
 npm install
 ```
 
