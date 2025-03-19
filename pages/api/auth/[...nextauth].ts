@@ -103,5 +103,10 @@ export default NextAuth({
     pages: {
         signIn: '/signin',
         error: '/error', // 로그인 에러도 포함한 모든 에러 시 여기로 이동
+    },
+    events: {
+        signIn: async (message) => { console.log("User signed in:", message); },
+        signOut: async (message) => { console.log("User signed out:", message); },
     }
+
 });

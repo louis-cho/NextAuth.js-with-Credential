@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === 'GET') {
     const client = await pool.connect()
     try {
-      const result = await client.query("SELECT id, title FROM news ORDER BY id DESC LIMIT 20")
+      const result = await client.query("SELECT id, title FROM news ORDER BY id DESC LIMIT 30")
       res.status(200).json(result.rows)
     } catch (err) {
       console.error("News list error:", err)
